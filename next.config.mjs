@@ -7,11 +7,13 @@ const withNextra = nextra({
     defaultShowCopyCode: true,
 });
 
-export default withNextra({
+const nextConfig = {
     output: 'export',
     reactStrictMode: true,
     images: {
         unoptimized: true,
     },
     trailingSlash: true,
-});
+};
+
+export default withNextra(nextConfig);
