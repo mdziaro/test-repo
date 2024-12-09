@@ -32,6 +32,8 @@ jobs:
       - name: Clear build cache
         run: |
           rm -rf .next
+      - name: List output files
+        run: ls -R out
       - name: Checkout
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
