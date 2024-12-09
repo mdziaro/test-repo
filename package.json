@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Introduction to version control system - Git",
   "scripts": {
+    "dev": "next",
     "build": "next build",
     "export": "next export",
     "deploy": "npm run build && npm run export && gh-pages -d out"
