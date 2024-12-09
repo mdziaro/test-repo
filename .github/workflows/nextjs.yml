@@ -32,8 +32,6 @@ jobs:
       - name: Clear build cache
         run: |
           rm -rf .next
-      - name: List output files
-        run: ls -R out
       - name: Checkout
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -71,7 +69,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          path: ./out
 
   # Deployment job
   deploy:
