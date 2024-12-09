@@ -8,7 +8,8 @@ const nextConfig = {
         unoptimized: true
     },
     trailingSlash: true,
-    basePath: '/git-course'
+    basePath: '/git-course',
+    assetPrefix: '/git-course',
 }
 
 const withNextra = nextra({
