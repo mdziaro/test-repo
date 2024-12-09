@@ -29,9 +29,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Clear build cache
-        run: |
-          rm -rf .next
       - name: Checkout
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
