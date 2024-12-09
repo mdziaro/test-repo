@@ -6,14 +6,13 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "deploy": "npm run build && npm run export && gh-pages -d out"
+    "deploy": "npm run build && gh-pages -d out"
   },
   "author": {
     "name": "Mikołaj Gosztyła",
     "email": "mgosz@student.agh.edu.pl"
   },
   "dependencies": {
-    "gh-pages": "^6.2.0",
     "next": "^15.0.4",
     "nextra": "^3.2.5",
     "nextra-theme-docs": "^3.2.5",
@@ -26,6 +25,7 @@
     "@types/react-dom": "^19",
     "eslint": "^8",
     "eslint-config-next": "15.0.4",
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
