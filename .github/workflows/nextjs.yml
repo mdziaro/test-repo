@@ -29,6 +29,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug Build
+        run: |
+          npm run build || true
+          npm run export || true
+          ls -al ./out || true
       - name: Checkout
         uses: actions/checkout@v4
       - name: Detect package manager
